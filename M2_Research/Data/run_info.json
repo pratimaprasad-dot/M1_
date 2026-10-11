@@ -1,0 +1,182 @@
+{
+  "runs": 100,
+  "sweeps": {
+    "beta": {
+      "field": "beta",
+      "xs": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        0.95
+      ],
+      "schemes": [
+        "Proposed",
+        "Error-ignoring P_D",
+        "Hu Alg.1, eta(beta)",
+        "Hu Alg.1, eta=10 dB",
+        "Hu robust (worst-case), eta(beta)"
+      ],
+      "ub": true
+    },
+    "Pc": {
+      "field": "Pc_dBm",
+      "xs": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "schemes": [
+        "Proposed",
+        "Error-ignoring P_D",
+        "Hu Alg.1, eta(beta)",
+        "Hu Alg.1, eta=10 dB",
+        "Hu robust (worst-case), eta(beta)",
+        "Proposed, ZF relay",
+        "Proposed, MRC/MRT relay",
+        "Proposed, LMMSE relay"
+      ],
+      "ub": true
+    },
+    "Pmax": {
+      "field": "Pmax_dBm",
+      "xs": [
+        15,
+        18,
+        21,
+        24,
+        27,
+        30
+      ],
+      "schemes": [
+        "Proposed",
+        "Error-ignoring P_D",
+        "Hu Alg.1, eta(beta)",
+        "Hu Alg.1, eta=10 dB",
+        "Hu robust (worst-case), eta(beta)"
+      ],
+      "ub": true
+    },
+    "Nr": {
+      "field": "Nr",
+      "xs": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "schemes": [
+        "Proposed",
+        "Error-ignoring P_D",
+        "Hu Alg.1, eta(beta)",
+        "Hu Alg.1, eta=10 dB",
+        "Hu robust (worst-case), eta(beta)"
+      ],
+      "ub": true
+    },
+    "Nt": {
+      "field": "Nt",
+      "xs": [
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemes": [
+        "Proposed",
+        "Proposed, ZF relay",
+        "Proposed, MRC/MRT relay",
+        "Proposed, LMMSE relay",
+        "Hu Alg.1, eta(beta)"
+      ],
+      "ub": false,
+      "base": {
+        "Nr": 12
+      }
+    },
+    "eps": {
+      "field": "eps",
+      "xs": [
+        0.0,
+        0.001,
+        0.003,
+        0.01,
+        0.03,
+        0.1
+      ],
+      "schemes": [
+        "Proposed",
+        "Error-ignoring P_D",
+        "Hu Alg.1, eta(beta)",
+        "Hu Alg.1, eta=10 dB",
+        "Hu robust (worst-case), eta(beta)"
+      ],
+      "ub": true
+    },
+    "shape": {
+      "field": "shape",
+      "xs": [
+        0.3,
+        0.5,
+        0.7,
+        1.0,
+        2.0,
+        5.0,
+        50.0
+      ],
+      "schemes": [
+        "Proposed",
+        "Error-ignoring P_D",
+        "Hu Alg.1, eta(beta)",
+        "Hu Alg.1, eta=10 dB",
+        "Hu robust (worst-case), eta(beta)"
+      ],
+      "ub": true
+    }
+  },
+  "defaults": {
+    "Nt": 8,
+    "Nr": 8,
+    "M": 4,
+    "K": 4,
+    "Pc_dBm": 20.0,
+    "Pmax_dBm": 20.0,
+    "Ps_dBm": 20.0,
+    "noise_dBm": -80.0,
+    "cnr_dB": 0.0,
+    "shape": 0.7,
+    "echo_dB": -90.0,
+    "eps": 0.01,
+    "contain": 0.95,
+    "beta": 0.9,
+    "alpha": 0.001,
+    "L": 1,
+    "eta_fixed_dB": 10.0,
+    "dist": 100.0,
+    "ple": 4.0,
+    "thetas": [
+      -0.7853981633974483,
+      0.0,
+      0.7853981633974483,
+      1.5707963267948966
+    ],
+    "n_tau": 16,
+    "n_x": 8192,
+    "n_tau_eval": 64,
+    "n_x_eval": 16384,
+    "margin": 0.003,
+    "maxit": 40,
+    "tol": 0.0001
+  },
+  "python": "3.14.6",
+  "numpy": "2.5.1",
+  "scipy": "1.18.0",
+  "seeds": "channel seed = 1000 + run, identical for all schemes at a sweep point"
+}
