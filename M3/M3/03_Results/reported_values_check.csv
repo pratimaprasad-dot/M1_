@@ -1,0 +1,31 @@
+paper_section,quantity,value_in_paper,recomputed_from_data,n_channels,data_file,rows_used
+V-B Fig.2,"Proposed, perfect CSI",10.67,10.669,60,main_comparison.csv,"method=prop, eps=0"
+V-B Fig.2,"Proposed, eps=0.01",8.37,8.375,60,main_comparison.csv,"method=prop, eps=0.01"
+V-B Fig.2,"Hu robust (10 dB), eps=0.01",4.76,4.762,60,main_comparison.csv,"method=hu_rob, eps=0.01"
+V-B Fig.2,"Hu robust tuned, eps=0.01",5.54,5.543,60,tuned_baselines.csv,"method=hu_rob, eps=0.01"
+V-B Fig.2,"Adapted worst-case, eps=0.01",5.86,5.859,60,main_comparison.csv,"method=adapt_rob, eps=0.01"
+V-B Fig.2,"Proposed, eps=0.03",6.57,6.572,60,main_comparison.csv,"method=prop, eps=0.03"
+V-B Fig.2,"Adapted worst-case, eps=0.03",4.43,4.432,60,main_comparison.csv,"method=adapt_rob, eps=0.03"
+V-B Fig.2,"Hu robust (10 dB), eps=0.03",3.04,3.037,60,main_comparison.csv,"method=hu_rob, eps=0.03"
+V-B Fig.2,"Hu non-robust tuned, eps=0.03",0,0.000,60,tuned_baselines.csv,"method=hu_nom, eps=0.03"
+V-C Fig.3,"Proposed beta=0.9, 100% protected",8.4,8.430,40,main_comparison.csv,"method=prop, eps=0.01, 40 trade-off channels"
+V-C Fig.3,"Proposed beta=0.9, share protected",1.00,1.000,40,main_comparison.csv,same rows
+V-C Fig.3,Adapted worst-case 4 dB,7.3,7.329,40,tradeoff.csv,"method=adapt_rob, param=4"
+V-C Fig.3,Hu robust 4 dB,5.8,5.765,40,tradeoff.csv,"method=hu_rob, param=4"
+V-C Fig.3,Hu non-robust 19 dB,5.3,5.258,40,tradeoff.csv,"method=hu_nom, param=19"
+V-D Fig.4,Proposed min admitted power (mW),~60,60.810,60,main_comparison.csv,"method=prop, eps=0.01"
+V-D Fig.4,Proposed max admitted power (mW),~390,389.708,60,main_comparison.csv,"method=prop, eps=0.01"
+V-E,Component: nominal SINR floor,2.83,2.825,40,component_study_eps0.01.csv,param=F1-S
+V-E,"Component: nominal SINR floor, share protected",~0.38,0.375,40,component_study_eps0.01.csv,param=F1-S
+V-E,Component: Gaussian detection model,5.79,5.795,40,component_study_eps0.01.csv,param=F1-PG
+V-E,"Component: Gaussian detection model, share protected",~0.68,0.675,40,component_study_eps0.01.csv,param=F1-PG
+V-E,Component: worst-case SINR rule,6.04,6.044,40,component_study_eps0.01.csv,param=F1-B
+V-E,Component: proposed,8.43,8.430,40,component_study_eps0.01.csv,param=F1-P
+V-E,Clutter nu=50,8.44,8.441,40,clutter_shape_endpoints.csv,nu=50
+V-E,Clutter nu=0.3,8.39,8.389,40,clutter_shape_endpoints.csv,nu=0.3
+V-E,"Clutter nu=0.3, share protected",1.00,1.000,40,clutter_shape_endpoints.csv,nu=0.3
+V-F,Proposed per-error-draw protection,0.71,0.710,60,main_comparison.csv,"method=prop, eps=0.01"
+V-F,Hu robust per-error-draw protection,1.00,1.000,60,main_comparison.csv,"method=hu_rob, eps=0.01"
+V-F,Adapted worst-case per-error-draw protection,1.00,1.000,60,main_comparison.csv,"method=adapt_rob, eps=0.01"
+V-F,Proposed worst-case SAR,2.30,2.295,60,main_comparison.csv,"method=prop, eps=0.01"
+V-F,Hu robust worst-case SAR,2.86,2.856,60,main_comparison.csv,"method=hu_rob, eps=0.01"
